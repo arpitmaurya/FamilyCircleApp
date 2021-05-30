@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FBFEFF"
+    >
+
+    <com.john.waveview.WaveView
+        android:id="@+id/wave_view_mact"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:above_wave_color="#739DFF"
+        app:blow_wave_color="#185DFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:wave_hz="fast"
+        app:wave_length="middle"/>
+    <ProgressBar
+        android:id="@+id/profile_progressMACT"
+        style="@style/MyProgressBarTwo"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:progress="30"
+        android:secondaryProgress="100"
+        android:theme="@style/MyProgressBarTwo2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </ProgressBar>
+
+
+    <TextView
+        android:id="@+id/makeCircle_text"
+        android:layout_width="207.57dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="39dp"
+        android:layout_marginBottom="519.18dp"
+
+        android:fontFamily="@font/autourone"
+        android:gravity="top"
+        android:text="GIVE YOUR CIRCLE A NAME"
+        android:textAppearance="@style/lets_get_st"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.201"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+    <TextView
+        android:id="@+id/mact_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/psregular"
+        android:gravity="center_horizontal|top"
+        android:text="Enter Your Circle Name :"
+        android:textColor="#000"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@id/proceed_mact"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.222"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/makeCircle_text"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/entr_email_text2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:fontFamily="@font/psregular"
+        android:gravity="center_horizontal|top"
+        android:text="Tip : You can create multiple circles and can join multiple circles."
+        android:textColor="#000"
+        android:textSize="15dp"
+        android:padding="20dp"
+        app:layout_constraintBottom_toTopOf="@id/proceed_mact"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.959" />
+
+    <ImageView
+        android:id="@+id/ellipse_mact"
+        android:layout_width="12dp"
+        android:layout_height="12dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/ellipse_neutral"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintHorizontal_bias="0.500"
+        app:layout_constraintStart_toEndOf="@+id/Circle_name_editBox"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.481" />
+
+    <Button
+        android:id="@+id/proceed_mact"
+        android:layout_width="301dp"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="527dp"
+        android:layout_marginBottom="87dp"
+        android:background="@drawable/buttonbackground"
+        android:elevation="10dp"
+        android:fontFamily="@font/roboto"
+        android:letterSpacing="0.30"
+        android:text="Continue"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        tools:targetApi="lollipop">
+
+
+    </Button>
+
+    <EditText
+        android:id="@+id/Circle_name_editBox"
+        android:layout_width="301dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="30dp"
+        android:background="#BCD3FF"
+        android:ems="10"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:fontFamily="@font/psbold"
+        android:hint="Circle Name "
+        android:inputType="textPersonName"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:gravity="center_vertical"
+        android:textCursorDrawable="@drawable/customcursor"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.402"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mact_text"
+        app:layout_constraintVertical_bias="0.0"
+       />
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

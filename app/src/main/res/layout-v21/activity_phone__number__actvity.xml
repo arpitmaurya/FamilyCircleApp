@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FBFEFF"
+    >
+
+
+    <ProgressBar
+        android:id="@+id/profile_progressPA"
+        style="@style/MyProgressBarTwo"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:progress="30"
+        android:secondaryProgress="100"
+        android:theme="@style/MyProgressBarTwo2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </ProgressBar>
+
+
+    <TextView
+        android:id="@+id/lets_get_st"
+        android:layout_width="207.57dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="39dp"
+        android:layout_marginBottom="519.18dp"
+
+        android:fontFamily="@font/autourone"
+        android:gravity="top"
+        android:text="@string/lets_get_st"
+        android:textAppearance="@style/lets_get_st"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.201"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/validityNotifier"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="*Please enter a valid phone number."
+        android:textColor= "#005EFF"
+        android:fontFamily="@font/psregular"
+        android:visibility="invisible"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.213"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextPhone"
+        app:layout_constraintVertical_bias="0.017" />
+
+    <TextView
+        android:id="@+id/privacypolicyText"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="21dp"
+        android:gravity="center_horizontal|top"
+        android:text="@string/by_signing_up_you_accept_our_terms_of_service_and_privacy_policy"
+        android:textAppearance="@style/welcome2"
+        app:layout_constraintBottom_toTopOf="@+id/sendotpbtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.994" />
+
+    <com.john.waveview.WaveView
+        android:id="@+id/wave_view2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:above_wave_color="#739DFF"
+        app:blow_wave_color="#185DFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:wave_hz="fast"
+        app:wave_length="middle">
+
+
+    </com.john.waveview.WaveView>
+
+    <TextView
+        android:id="@+id/entrphntxt"
+        android:layout_width="wrap_content"
+        android:layout_height="23dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="21dp"
+        android:fontFamily="@font/psregular"
+        android:gravity="center_horizontal|top"
+        android:text="Enter Your Phone Number :"
+        android:textColor="#000"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/sendotpbtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.24"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.331" />
+
+
+    <ImageView
+        android:id="@+id/ellipse_1"
+        android:layout_width="12dp"
+        android:layout_height="12dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="8.89dp"
+        android:layout_marginEnd="21dp"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/ellipse_neutral"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintHorizontal_bias="0.500"
+        app:layout_constraintStart_toEndOf="@+id/editTextPhone"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.325" />
+
+    <Button
+        android:id="@+id/sendotpbtn"
+        android:layout_width="301dp"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="527dp"
+        android:layout_marginBottom="87dp"
+        android:background="@drawable/buttonbackground"
+        android:elevation="10dp"
+        android:fontFamily="@font/roboto"
+        android:letterSpacing="0.30"
+        android:text="SEND OTP"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        tools:targetApi="lollipop">
+
+
+    </Button>
+
+    <EditText
+        android:id="@+id/editTextPhone"
+        android:layout_width="301dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="10dp"
+        android:background="#BCD3FF"
+        android:ems="10"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:fontFamily="@font/psbold"
+        android:hint="1234567890"
+        android:inputType="phone"
+        android:letterSpacing="0.80"
+        android:paddingStart="2dp"
+        android:maxLength="10"
+        android:paddingEnd="10dp"
+        android:textCursorDrawable="@drawable/customcursor"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/privacypolicyText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.372"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/entrphntxt"
+        app:layout_constraintVertical_bias="0.0"
+        tools:targetApi="lollipop" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,147 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorPrimaryDark</item>
+
+
+    </style>
+
+    <style name="phrase">
+        <item name="android:textSize">
+            50sp
+        </item>
+        <item name="android:shadowColor">#40000000</item>
+        <item name="android:shadowDx">
+            0
+        </item>
+        <item name="android:shadowDy">
+            18
+        </item>
+        <item name="android:shadowRadius">
+           6
+        </item>
+    </style>
+
+    <style name="welcome2">
+
+        <item name="android:textSize">
+            12sp
+        </item>
+
+        <item name="android:letterSpacing" tools:targetApi="lollipop">
+            0.23
+        </item>
+
+        <item name="android:textColor">
+            #000000
+        </item>
+
+        <item name="android:shadowColor">
+            #40000000
+        </item>
+
+        <item name="android:shadowDx">
+            0
+        </item>
+
+        <item name="android:shadowDy">
+            10
+        </item>
+
+        <item name="android:shadowRadius">
+            2
+        </item>
+
+    </style>
+
+    <style name="enter">
+
+        <item name="android:textSize">
+            24sp
+        </item>
+
+        <item name="android:letterSpacing" tools:targetApi="lollipop">
+            0.68
+        </item>
+
+        <item name="android:textColor">
+            #000000
+        </item>
+
+        <item name="android:shadowColor">#40000000</item>
+
+        <item name="android:shadowDx">
+            0
+        </item>
+
+        <item name="android:shadowDy">
+            80
+        </item>
+
+        <item name="android:shadowRadius">
+           3
+        </item>
+
+    </style>
+
+    <style name="already_hav">
+
+        <item name="android:textSize">
+            10sp
+        </item>
+
+        <item name="android:letterSpacing" tools:targetApi="lollipop">
+            0.23
+        </item>
+
+        <item name="android:textColor">
+            #000000
+        </item>
+
+    </style>
+
+    <style name="lets_get_st">
+
+        <item name="android:textSize">
+            40sp
+        </item>
+
+        <item name="android:shadowColor">
+            #40000000
+        </item>
+
+        <item name="android:shadowDx">
+            0
+        </item>
+
+        <item name="android:shadowDy">
+            5
+        </item>
+
+        <item name="android:shadowRadius">
+            4
+        </item>
+
+    </style>
+
+    <style name="MyProgressBarTwo" parent="@style/Widget.AppCompat.ProgressBar.Horizontal">
+        <item name="colorButtonNormal">#FFFFFF</item>
+        <item name="colorControlActivated">#578BEB</item>
+        <item name="colorControlHighlight">#FFFFFF</item>
+        <item name="android:progressDrawable">@drawable/progressbarbg</item>
+        <item name="android:minWidth">200dp</item>
+    </style>
+    <style name="MyProgressBarTwo2" parent="@style/Widget.AppCompat.ProgressBar.Horizontal">
+        <item name="colorButtonNormal">#FFFFFF</item>
+        <item name="colorControlActivated">#6091EC</item>
+        <item name="colorControlHighlight">#FFFFFF</item>
+        <item name="android:progressDrawable">@drawable/progressbarbg2</item>
+        <item name="android:minWidth">200dp</item>
+    </style>
+
+
+
+</resources>

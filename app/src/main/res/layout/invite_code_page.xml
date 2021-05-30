@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".InviteCodePage">
+
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:fontFamily="@font/psbold"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Share this invite code with you family"
+        android:textColor="#fff"
+        android:textSize="25sp"
+
+        app:layout_constraintBottom_toTopOf="@+id/textView5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="350dp"
+        android:layout_height="127dp"
+        android:layout_marginTop="300dp"
+        android:fontFamily="@font/psbold"
+        android:gravity="center"
+        android:padding="30dp"
+        android:text="Tip: You can share this code any way you like: Text it , Email it , Write it down , or say it."
+        android:textColor="#fff"
+        android:textSize="15sp"
+
+        app:layout_constraintBottom_toTopOf="@+id/sharecode"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/CARDview"
+        android:layout_width="300dp"
+        android:layout_height="120dp"
+        android:background="@drawable/buttonbgwhite"
+        android:layout_marginTop="32dp"
+        app:cardCornerRadius="20dp"
+        android:elevation="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+        <TextView
+            android:id="@+id/InviteCodeTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/psbold"
+            android:text="EMC-UNL"
+            android:layout_marginTop="15dp"
+            android:textColor="#000"
+            android:textSize="30sp"
+
+            />
+
+            <TextView
+                android:id="@+id/InviteCodeDesc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/psregular"
+                android:text="This code will be active for 2 days"
+                android:textColor="@color/colorPrimary"
+                android:textSize="15sp"
+
+                />
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+    <Button
+        android:id="@+id/sharecode"
+        android:layout_width="280dp"
+        android:layout_height="60dp"
+        android:background="@drawable/buttonbgwhite"
+        android:fontFamily="@font/psbold"
+        android:text="@string/share_code"
+        android:textColor="#000"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.84" />
+
+    <TextView
+        android:id="@+id/doneSharingg"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="32dp"
+        android:background="#000D0B0B"
+        android:fontFamily="@font/psregular"
+        android:gravity="center"
+        android:text="I'am done sharing"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sharecode" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

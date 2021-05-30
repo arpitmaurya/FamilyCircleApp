@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "134114008721",
+    "firebase_url": "https://accidentnotifier-de84b.firebaseio.com",
+    "project_id": "accidentnotifier-de84b",
+    "storage_bucket": "accidentnotifier-de84b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:134114008721:android:e0fcdc07edb2e13204e930",
+        "android_client_info": {
+          "package_name": "com.india.AccidentNotifier"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "134114008721-46d00kbb2redeqcb50shkoiq0ee5c9v4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDKNQUVPhaKQcOatP9n16MwL5oEWA8glps"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "134114008721-46d00kbb2redeqcb50shkoiq0ee5c9v4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    >
+
+
+    <TextView
+        android:id="@+id/password_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="39dp"
+        android:layout_marginBottom="519.18dp"
+        android:fontFamily="@font/psbold"
+        android:gravity="center"
+        android:padding="25dp"
+        android:textColor="#fff"
+        android:text="Add Places your family visits often, like home and school"
+        android:textAppearance="@style/lets_get_st"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.03" />
+
+    <TextView
+        android:id="@+id/entr_password_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:fontFamily="@font/psregular"
+        android:gravity="center_horizontal|top"
+        android:text="You can turn on notifications to get alerts when other members of your Circle and go. "
+        android:textColor="#fff"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:padding="15dp"
+        app:layout_constraintBottom_toTopOf="@id/proceed_places"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.941" />
+
+    <Button
+        android:id="@+id/proceed_places"
+        android:layout_width="301dp"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="527dp"
+        android:layout_marginBottom="87dp"
+        android:background="@drawable/buttonbgwhite"
+        android:elevation="10dp"
+        android:fontFamily="@font/roboto"
+        android:letterSpacing="0.30"
+        android:text="Continue"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        tools:targetApi="lollipop">
+
+
+    </Button>
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

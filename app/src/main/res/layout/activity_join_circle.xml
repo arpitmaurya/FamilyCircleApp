@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FBFEFF"
+    >
+
+
+    <ProgressBar
+        android:id="@+id/profile_progressJoin"
+        style="@style/MyProgressBarTwo"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:progress="10"
+        android:secondaryProgress="100"
+        android:theme="@style/MyProgressBarTwo2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </ProgressBar>
+
+
+    <TextView
+        android:id="@+id/JoinText"
+        android:layout_width="221dp"
+        android:layout_height="124dp"
+        android:layout_marginTop="39dp"
+        android:layout_marginBottom="519.18dp"
+
+        android:fontFamily="@font/autourone"
+        android:gravity="top"
+        android:text="Joining a Circle?"
+        android:textAppearance="@style/lets_get_st"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.201"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+    <TextView
+        android:id="@+id/jcact"
+        android:layout_width="308dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:fontFamily="@font/psregular"
+        android:gravity="center"
+        android:padding="15dp"
+        android:text="* Fill in the Invite code provided by the Circle creator to join his/her circle."
+        android:textColor="#005EFF"
+        android:textSize="13sp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.553"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.468" />
+
+    <TextView
+        android:id="@+id/txt"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:fontFamily="@font/psregular"
+        android:gravity="center_horizontal|top"
+        android:text="Tip: You may need to ask the Circle Creator for the invite code."
+        android:textColor="#000"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.805" />
+
+    <TextView
+        android:id="@+id/jointext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="10dp"
+        android:fontFamily="@font/psregular"
+        android:gravity="center_horizontal|top"
+        android:text="Enter your 6 letter invite code :"
+        android:textColor="#000"
+        android:textSize="19sp"
+        app:layout_constraintBottom_toTopOf="@+id/root_join_circle_layout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.187"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.856" />
+
+    <Button
+        android:id="@+id/verifyOtpBTN"
+        android:layout_width="301dp"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="527dp"
+
+        android:background="@drawable/buttonbackground"
+        android:elevation="10dp"
+        android:fontFamily="@font/roboto"
+        android:text="Submit "
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.518"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.558">
+
+
+    </Button>
+
+    <LinearLayout
+
+        android:id="@+id/root_join_circle_layout"
+        android:layout_width="341dp"
+        android:layout_height="67dp"
+        android:background="#FBFEFF"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        android:weightSum="7"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.346">
+
+
+        <EditText
+            android:id="@+id/otp_edit_box1"
+            android:layout_width="45dp"
+            android:layout_height="55dp"
+            android:layout_marginEnd="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/edittext_curve_bg"
+            android:fontFamily="@font/psbold"
+            android:gravity="center"
+            android:inputType="number"
+            android:maxLength="1"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/otp_edit_box2"
+            android:layout_width="45dp"
+            android:layout_height="55dp"
+            android:layout_marginEnd="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/edittext_curve_bg"
+            android:fontFamily="@font/psbold"
+            android:gravity="center"
+
+            android:inputType="number"
+            android:maxLength="1"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+
+        <EditText
+            android:id="@+id/otp_edit_box3"
+            android:layout_width="45dp"
+            android:layout_height="55dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/edittext_curve_bg"
+            android:fontFamily="@font/psbold"
+            android:gravity="center"
+
+            android:inputType="number"
+            android:maxLength="1"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/dash"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_gravity="center_vertical"
+            android:layout_marginEnd="10dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/psregular"
+            android:gravity="center_horizontal|top"
+            android:text="-"
+            android:textColor="#0073FF"
+            android:textSize="30sp"
+            app:layout_constraintBottom_toTopOf="@+id/CREATE_CIRCLE"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/JOIN_CIRCLE"
+            app:layout_constraintVertical_bias="0.438" />
+
+
+        <EditText
+            android:id="@+id/otp_edit_box4"
+            android:layout_width="45dp"
+            android:layout_height="55dp"
+            android:layout_marginEnd="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/edittext_curve_bg"
+            android:fontFamily="@font/psbold"
+            android:gravity="center"
+            android:inputType="number"
+            android:maxLength="1"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/otp_edit_box5"
+            android:layout_width="45dp"
+            android:layout_height="55dp"
+            android:layout_marginEnd="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/edittext_curve_bg"
+            android:fontFamily="@font/psbold"
+            android:gravity="center"
+            android:inputType="number"
+            android:maxLength="1"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/otp_edit_box6"
+            android:layout_width="45dp"
+            android:layout_height="55dp"
+            android:layout_weight="1"
+            android:background="@drawable/edittext_curve_bg"
+            android:fontFamily="@font/psbold"
+            android:gravity="center"
+            android:inputType="number"
+            android:maxLength="1"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

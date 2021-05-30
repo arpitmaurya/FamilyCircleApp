@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Accident Notifier</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in</string>
+    <string name="action_sign_up">Sign up</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="phrase">WE CARE WHOM YOU CARE.</string>
+    <string name="enter">ENTER</string>
+    <string name="already_hav">ALREADY HAVE AN ACCOUNT? SIGN IN</string>
+    <string name="welcometo">WELCOME</string>
+    <string name="lets_get_st">LET\'S GET STARTED.</string>
+    <string name="by_signing_up_you_accept_our_terms_of_service_and_privacy_policy">BY SIGNING UP YOU ACCEPT OUR TERMS OF SERVICE AND PRIVACY POLICY.</string>
+    <string name="share_code">Share Code</string>
+    <string name="this_makes_it_easy_for_your_family_to_find_you_on_the_map">This makes it easy for your family to find you on the map.</string>
+    <string name="title_activity_places_map">Map</string>
+
+
+</resources>

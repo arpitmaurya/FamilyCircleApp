@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FBFEFF"
+    >
+
+
+    <ProgressBar
+        android:id="@+id/profile_progressNACT"
+        style="@style/MyProgressBarTwo"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:progress="30"
+        android:secondaryProgress="100"
+        android:theme="@style/MyProgressBarTwo2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </ProgressBar>
+
+
+    <TextView
+        android:id="@+id/enter_your_name_text"
+        android:layout_width="207.57dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="39dp"
+        android:layout_marginBottom="519.18dp"
+
+        android:fontFamily="@font/autourone"
+        android:gravity="top"
+        android:text="WHAT'S YOUR NAME?"
+        android:textAppearance="@style/lets_get_st"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.201"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+    <TextView
+        android:id="@+id/entr_name_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="21dp"
+        android:fontFamily="@font/psregular"
+        android:gravity="center_horizontal|top"
+        android:text="Enter Your Full Name :"
+        android:textColor="#000"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@id/proceed_nact"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.183"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.436" />
+
+    <ImageView
+        android:id="@+id/ellipse_1"
+        android:layout_width="12dp"
+        android:layout_height="12dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="8.89dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/ellipse_neutral"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintHorizontal_bias="0.500"
+        app:layout_constraintStart_toEndOf="@+id/editTextPhone"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.428" />
+
+    <ImageView
+        android:id="@+id/ellipse_"
+        android:layout_width="12dp"
+        android:layout_height="12dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="8.89dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/ellipse_neutral"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintStart_toEndOf="@+id/editTextPhone"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.518" />
+
+    <Button
+        android:id="@+id/proceed_nact"
+        android:layout_width="301dp"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="527dp"
+        android:layout_marginBottom="87dp"
+        android:background="@drawable/buttonbackground"
+        android:elevation="10dp"
+        android:fontFamily="@font/roboto"
+        android:letterSpacing="0.30"
+        android:text="Proceed"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        tools:targetApi="lollipop">
+
+
+    </Button>
+
+    <EditText
+        android:id="@+id/first_name"
+        android:layout_width="301dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="20dp"
+        android:background="#BCD3FF"
+        android:ems="10"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:fontFamily="@font/psbold"
+        android:hint="First Name"
+        android:inputType="textPersonName"
+        android:paddingStart="5dp"
+        android:paddingEnd="10dp"
+        android:textCursorDrawable="@drawable/customcursor"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/proceed_nact"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.38"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/entr_name_txt"
+        app:layout_constraintVertical_bias="0.0"
+        tools:targetApi="lollipop" />
+
+    <EditText
+        android:id="@+id/last_name"
+        android:layout_width="301dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="10dp"
+        android:background="#BCD3FF"
+        android:ems="10"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:fontFamily="@font/psbold"
+        android:hint="Last Name"
+        android:inputType="textPersonName"
+        android:paddingStart="5dp"
+        android:paddingEnd="10dp"
+        android:textCursorDrawable="@drawable/customcursor"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.38"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/enter_your_name_text"
+        app:layout_constraintVertical_bias="0.341"
+        tools:targetApi="lollipop" />
+
+    <com.john.waveview.WaveView
+        android:id="@+id/wave_view_nact"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:above_wave_color="#739DFF"
+        app:blow_wave_color="#185DFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:wave_hz="fast"
+        app:wave_length="middle"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
