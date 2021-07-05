@@ -1,5 +1,9 @@
 # AccidentNotifier
 
+Accident Notifier is an app for getting real-time locations of family members connected in a family circle.
+This project is under development.
+
+
 <p float="left">
   <img src="https://github.com/itsarpitr/AccidentNotifier/blob/master/images/photo_2021-07-04_08-17-02%20-%20Copy%20(2).jpg" width="150" />
   <img src="https://github.com/itsarpitr/AccidentNotifier/blob/master/images/photo_2021-07-04_08-17-06%20-%20Copy%20(2).jpg" width="150" />
